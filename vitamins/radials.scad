@@ -51,9 +51,10 @@ E_LINE = ["E_LINE", [4.6, 2.3, 3.8], [grey(30), grey(80)], [0.45, 0.45], [[-1,0]
 rd_transistors = [ E_LINE, TO92];
 
 // Electrolytic capacitors
-ECAP8x11 = ["ECAP8x12", [8.2, 7.5, 12.5], 0.5, [2.4, 2.5], 0.5, inch(0.1), [grey(20), grey(60)]];
+ECAP8x11 = ["ECAP8x11", [8.2, 7.5, 12.5], 0.5, [2.4, 2.5], 0.5, inch(0.1), [grey(20), grey(60)]];
+ECAP5x2 = ["ECAP5x2", [5.0, 4.0, 10.5], 0.5, [2.4, 2.5], 0.5, inch(0.1), [grey(20), grey(60)]];
 
-rd_electrolytics = [ECAP8x11];
+rd_electrolytics = [ECAP8x11, ECAP5x2];
 
 // Boxed plastic film capacitors
 BOXC18x5x11  = ["BOXC18x5x11",  [18,  5, 11, 0.25], 1.2, [8,  0.6, 0.4], [15, 0.6, 4.4], [grey(40), "LightYellow"]];
