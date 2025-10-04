@@ -36,7 +36,8 @@ BBF623   = ["F623",  3,  10, 4,   "black",     0.6,  0.7,  11.5,  1];
 BBF693   = ["F693",  3,  8,  3,   "silver",    0.5,  0.7,  9.5,   0.7];
 BBF625   = ["F625",  5,  16, 5,   "silver",    1.0,  1.0,  18,    1];
 BBF695   = ["F695",  5,  13, 4,   "silver",    1.0,  1.0,  15,    1];
+W604     = ["W604",  4,  12, 4,   "black",    0.5,  0.7,   0,    0];
 
-ball_bearings = [BBF625, BBF693, BBF623, BBF695, BBMR63, BBMR83, BBMR85, BBMR93, BBMR95, BBSMR95, BB624, BB686, BB696, BB608, BB6200, BB6201, BB6808];
+ball_bearings = [BBF625, BBF693, BBF623, BBF695, BBMR63, BBMR83, BBMR85, BBMR93, BBMR95, BBSMR95, BB624, BB686, BB696, BB608, BB6200, BB6201, BB6808, W604];
 
 use <ball_bearing.scad>
