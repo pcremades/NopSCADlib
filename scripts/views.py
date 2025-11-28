@@ -245,15 +245,29 @@ def views(target, do_assemblies = None):
         #
         # Title, description and picture
         #
-        project = ' '.join(word[0].upper() + word[1:] for word in os.path.basename(os.getcwd()).split('_'))
-        print('<a name="TOP"></a>', file = doc_file)
-        print('# %s' % project, file = doc_file)
+        # project = ' '.join(word[0].upper() + word[1:] for word in os.path.basename(os.getcwd()).split('_'))
+        # print('<a name="TOP"></a>', file = doc_file)
+        # print('# %s' % project, file = doc_file)
         text = blurb.scrape_blurb(source_dir + '/' + main_file)
         blurbs = blurb.split_blurb(text)
+        print(blurbs)
+
+        project = ""
+        if blurbs[0].startswith("TITLE:"):
+            project = blurbs[0][6 :].split('\n')[0]
+            print(blurbs)
+            blurbs[0] = blurbs[0].split('\n', 1)[1]
+            print(blurbs)
+        else:
+            project = ' '.join(word[0].upper() + word[1:] for word in os.path.basename(os.getcwd()).split('_'))
+        print('<a name="TOP"></a>', file = doc_file)
+        print('# %s' % project, file = doc_file)
+
         if len(text):
             print(blurbs[0], file = doc_file)
         else:
             print(Fore.MAGENTA + "Missing project description" + Fore.WHITE)
+
         #
         # Only add the image if the first blurb section doesn't contain one.
         #
