@@ -264,7 +264,7 @@ def views(target, do_assemblies = None):
         print('# %s' % project, file = doc_file)
 
         if len(text):
-            print(blurbs[0], file = doc_file)
+            print(blurbs[0].replace('\n', r'<br>'), file = doc_file)
         else:
             print(Fore.MAGENTA + "Missing project description" + Fore.WHITE)
 
