@@ -245,20 +245,12 @@ def views(target, do_assemblies = None):
         #
         # Title, description and picture
         #
-<<<<<<< Updated upstream
-        # project = ' '.join(word[0].upper() + word[1:] for word in os.path.basename(os.getcwd()).split('_'))
-        # print('<a name="TOP"></a>', file = doc_file)
-        # print('# %s' % project, file = doc_file)
-=======
-<<<<<<< Updated upstream
         project = ' '.join(word[0].upper() + word[1:] for word in os.path.basename(os.getcwd()).split('_'))
-=======
         # project = ' '.join(word[0].upper() + word[1:] for word in os.path.basename(os.getcwd()).split('_'))
         # print('<a name="TOP"></a>', file = doc_file)
         # print('# %s' % project, file = doc_file)
         text = blurb.scrape_blurb(source_dir + '/' + main_file)
         blurbs = blurb.split_blurb(text)
-
 
         project = ""
         if blurbs[0].startswith("TITLE:"):
@@ -266,11 +258,11 @@ def views(target, do_assemblies = None):
             blurbs[0] = blurbs[0].split('\n', 1)[1]
         else:
             project = ' '.join(word[0].upper() + word[1:] for word in os.path.basename(os.getcwd()).split('_'))
->>>>>>> Stashed changes
+
         print('<a name="TOP"></a>', file = doc_file)
 
-        print('# %s' % project, file = doc_file)
->>>>>>> Stashed changes
+        #print('# %s' % project, file = doc_file)
+
         text = blurb.scrape_blurb(source_dir + '/' + main_file)
         blurbs = blurb.split_blurb(text)
         print(blurbs)
