@@ -18,7 +18,7 @@
 //
 
 
-//          name     id od   w    colour       or    ir    fd     fw
+//          name     id  od   w    colour       or    ir    fd     fw
 BBSMR95  = ["SMR95",  5,  9,  2.5, "silver",    0.5,  0.7,   0,    0];  // SMR95 ball bearing for FlexDrive extruder
 BB624    = ["624",    4,  13, 5,   "blue",      1.2,  1.2,   0,    0];  // 624 ball bearing for idlers
 BB686    = ["686",    6,  13, 5,   "silver",    0.9,  0.7,   0,    0];
@@ -37,8 +37,9 @@ BBF693   = ["F693",   3,  8,  3,   "silver",    0.5,  0.7,  9.5,   0.7];
 BBF625   = ["F625",   5,  16, 5,   "silver",    1.0,  1.0,  18,    1];
 BBF695   = ["F695",   5,  13, 4,   "silver",    1.0,  1.0,  15,    1];
 W604     = ["W604",   4,  12, 4,   "black",     0.5,  0.7,   0,    0];
-BB693ZZ  = ["693",3,  8, 4,   "silver",    0.5,  0.5,   0,    0];
+BB693ZZ  = ["693",3,  8,  4,       "silver",    0.5,  0.5,   0,    0];
+BB6805   = ["6805",  25, 37,  7,   "black",     1.5,  2.0,   0,    0];
 
-ball_bearings = [BBF625, BBF693, BBF623, BBF695, BBMR63, BBMR83, BBMR85, BBMR93, BBMR95, BBSMR95, BB624, BB686, BB696, BB608, BB6200, BB6201, BB6808, W604, BB693ZZ];
+ball_bearings = [BBF625, BBF693, BBF623, BBF695, BBMR63, BBMR83, BBMR85, BBMR93, BBMR95, BBSMR95, BB624, BB686, BB696, BB608, BB6200, BB6201, BB6808, W604, BB693ZZ, BB6805];
 
 use <ball_bearing.scad>
